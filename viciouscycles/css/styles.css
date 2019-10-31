@@ -1,0 +1,172 @@
+/* Author: Jona McDuffie */
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    background: #dbdada;
+    margin-left: 96px;
+    margin-right: 96px;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    max-width: 80%;
+    height: auto;
+
+  }
+
+/* navi */
+
+
+nav {
+    display:flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #0A68A3;
+    padding: 0 100px;
+    font-weight: bold;
+    
+  }
+  
+  
+  ul {
+    margin: 0;
+    padding:0;
+    list-style:none;
+    z-index: 1;
+  }
+  
+  li {
+    display:block;
+    float:left;
+    padding: 15px 25px;
+    background-color: #0A68A3;
+    position: relative;
+    transition: .3s ease-in-out;
+  }
+  
+  li:hover {
+    cursor:pointer;
+    background-color: #003557;
+
+  }
+  
+  li:visited {
+    cursor:pointer;
+    color: #F09C26;
+    background-color: #A3630A;
+  }
+  ul .drop {
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    z-index: -1;
+    transition: .3s ease-in-out;
+  }
+  
+  ul .drop li {
+    font-size: 14px;
+  }
+
+  ul li ul {
+      visibility: hidden;
+  }
+  
+  ul li:hover > .drop,
+  ul li .drop:hover {
+    visibility: visible; 
+    display:block;
+    opacity: 1;
+    margin-top: 15px
+  }
+  
+  ul .drop li {
+    white-space:nowrap;
+    width: 100%;
+  }
+  
+  ul li ul li {
+      clear: both;
+      width: 100%;
+  }
+  
+  a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+} 
+
+section article p img {
+    float: left;
+    max-width: 35%;
+    height: auto;
+    margin: 0px 20px 20px 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+aside {
+    float: left;
+    width: 30%;
+    font-size: 75%;
+    color: #FFF;
+    background-color: #0A68A3;
+    
+}
+
+aside p {
+    margin: 10%;
+    text-align: center;
+}
+
+aside h2 {
+	text-align: center;
+	padding-top: 1%;
+}
+
+@media screen and (max-width: 700px) {
+    aside {
+      visibility: hidden;
+      clear: both;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+      display: none;
+    }
+  }
+
+  .row {
+    padding: 5px;
+    display: inline-block;
+  }
+  
+footer#foot {
+    float: right;
+	display: flex;
+    flex-direction: row;
+    font-weight: lighter;
+}
+
+footer#foot div#left {
+	top: 40px;
+    right: 5px;
+    position: relative;
+    padding-right: 10px;
+}
+
+footer#foot div#right {
+	top: 40px;
+	position: relative;
+    right: 10px;
+    padding-left: 15px;
+}
